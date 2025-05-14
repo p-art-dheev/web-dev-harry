@@ -1,0 +1,14 @@
+.cricketer {
+    color: rgb(5, 5, 113);
+    background-color: rgb(225, 119, 44);
+}
+
+.student {
+    color: black;
+    background-color: aquamarine;
+}
+
+.male {
+    border: 2px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form to apply for Sigma Web Dev TA</h1>
+    <form action="post">
+        <div>
+            <!-- USERNAME -->
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="Username" placeholder="Enter your username" />
+        </div>
+
+        <div>
+            <!-- Gender -->
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <!-- Checkbox -->
+            <input type="checkbox" id="AIE" name="Branch" value="AIE">
+            <label for="AIE">AIE</label>
+            <input type="checkbox" id="CSE" name="Branch" value="CSE">
+            <label for="CSE">CSE</label>
+            <input type="checkbox" id="ECE" name="Branch" value="ECE">
+            <label for="ECE">ECE</label>
+            <input type="checkbox" id="Mechanical" name="Branch" value="Mechanical">
+            <label for="Mechanical">Mechanical</label>
+        </div>
+
+        <!-- Text AREA -->
+        <label for="comment">Comment</label>
+        <br>
+        <textarea id="comment" name="comment" rows="4" cols="40" placeholder="Enter you comment here..."></textarea>
+
+        <!-- SELECT -->
+        <div>
+            <select name="fruits">
+                <option value="Banana ">Banana</option>
+                <option value="Apple ">Apple</option>
+                <option value="Berries ">Berries</option>
+                <option value="Melon ">Melon</option>
+                <option value="Kiwi ">Kiwi</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
