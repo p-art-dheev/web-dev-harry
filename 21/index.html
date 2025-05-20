@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /*Override inline css using color */
+        .cyellow {
+            color: yellow !important;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        /*this will be applied as it is at the last which will override the previous ones
+        
+        POSITION is important*/
+        .cpurple {
+            color: purple;
+        }
+
+        /*Attribute selector*/
+        [data-x=a] {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- inline selector have more preference   -->
+        <h1 style="color: green;" class="cyellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+
+</body>
+
+</html>
