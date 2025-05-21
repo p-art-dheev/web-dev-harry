@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units - EM</title>
+    <!-- 
+        In mobiles height > width
+        Here VMIN = width
+        
+        In Computers width > height
+        Here VMIN = height 
+        -->
+
+
+    <!-- REFERENCE 
+         
+        https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units
+        
+        -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+
+        .box {
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: auto;
+            height: 10vh;
+
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: 20px auto;
+            min-height: 80vh;
+            font-size: 18px;
+
+        }
+
+        /*Herre p gets twice the size of its parent */
+        .container>div {
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+
+        }
+
+        .container>div>div {
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid blue;
+
+        }
+
+
+        .mycont {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 20px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            width: 80vw;
+            /*100% of the height of desktops and 100% of width of mobile*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam tempora nulla, eligendi
+            optio odit sunt accusantium, nam impedit eos et ullam eaque nisi numquam explicabo ratione. Veritatis, vero
+            assumenda? Ducimus delectus quaerat ex fugit vitae, iure repellendus veritatis asperiores accusamus rem
+            soluta
+            laudantium voluptatum nostrum dicta impedit vero qui ut ullam aliquam nemo facilis. Vitae, repellendus!
+
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores enim voluptate, dicta
+                necessitatibus
+                labore at, impedit magnam illum accusantium deserunt quasi esse, aliquam repellat pariatur expedita
+                dolorum
+
+                nesciunt blanditiis numquam eos, neque harum consectetur. Voluptate reprehenderit molestiae nobis
+                quibusdam
+                accusantium facilis obcaecati quae delectus.
+                sit nobis tempora! Adipisci rerum, quas, illo inventore similique, nam reprehenderit molestias ullam a
+                dolor
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="mycont">I am another container</div>
+
+</body>
+
+</html>

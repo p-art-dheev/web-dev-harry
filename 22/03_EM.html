@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units - EM</title>
+    <!-- EM = 2,
+        Twice the amount of size from the element it is inheriting from
+        
+        EM = 2
+        Twice the amount of size from the element it is inheriting from 
+        -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .box {
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: auto;
+            height: 10vh;
+
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: 20px auto;
+            height: 80vh;
+            font-size: 18px;
+
+        }
+
+        /*Herre p gets twice the size of its parent */
+        .container p {
+            font-size: 2em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam tempora nulla, eligendi
+            optio odit sunt accusantium, nam impedit eos et ullam eaque nisi numquam explicabo ratione. Veritatis, vero
+            assumenda? Ducimus delectus quaerat ex fugit vitae, iure repellendus veritatis asperiores accusamus rem
+            soluta
+            laudantium voluptatum nostrum dicta impedit vero qui ut ullam aliquam nemo facilis. Vitae, repellendus!
+
+        </p>
+    </div>
+
+</body>
+
+</html>
