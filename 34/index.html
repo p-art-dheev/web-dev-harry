@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        /*use display: flow-root to fix the issues with the orverflowing of content from the parent
+        
+        It will change the parent size to fit in the element if used
+        */
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        /**image with float on right*/
+        img {
+            float: right;
+        }
+
+        /*clear: right wont allow any element to flow in its position and gives its space */
+        .card:nth-child(3) {
+            background-color: aqua;
+            clear: right;
+            /*clear: both
+            
+            not allowed on both the sides*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" height="150">
+        <div class="card"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, expedita odit. Est
+            possimus quaerat libero. Et repellat quisquam velit adipisci voluptas quod error.</div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates error atque laboriosam
+            laborum voluptatum obcaecati suscipit libero consequatur assumenda aspernatur a ab cumque, reprehenderit,
+            minima, molestiae dolore ad accusantium hic amet facere ipsum veniam. Voluptatem minus quis odio pariatur,
+            adipisci necessitatibus incidunt omnis ipsa maiores laboriosam, atque ex repellat totam nesciunt? Quisquam
+            dicta, laborum inventore debitis modi similique culpa nostrum dolore. Nostrum, quos? Maxime corrupti iusto
+            praesentium assumenda qui ab, quibusdam atque beatae, odit quae repellat nulla, incidunt repellendus optio
+            officia libero impedit at voluptatum itaque pariatur voluptatibus rem mollitia? Eveniet saepe veniam et
+            repudiandae similique quidem aliquam modi dicta quasi eos necessitatibus incidunt nostrum temporibus,
+            pariatur ullam, blanditiis itaque doloremque? Sed quos magni, aliquid amet molestias deleniti alias
+            doloremque iusto dolorum blanditiis dolor harum eveniet quae ex quam maiores! Id soluta alias non deleniti a
+            fugiat libero at doloremque nemo aut perferendis nostrum inventore cupiditate ipsam beatae facere laboriosam
+            fuga consequatur, possimus itaque suscipit labore cum? Numquam tempore voluptate nesciunt animi deserunt
+            pariatur quod id dolor corporis! Ad porro minima beatae fugit deleniti qui quod fuga rem amet explicabo,
+            perspiciatis voluptate! Quia maiores illo adipisci velit nobis nulla consectetur atque voluptas eos
+            obcaecati, reprehenderit totam sunt porro, debitis amet aliquam libero! Asperiores modi alias minima animi
+            praesentium minus magni laudantium autem repellat dolore sapiente aut necessitatibus, officiis unde soluta
+            assumenda vero. Consequatur, tempora necessitatibus commodi libero, suscipit et consequuntur cupiditate
+            facilis veniam quam dolore error. Beatae, consequuntur! Deleniti quae quibusdam quia ex labore quaerat
+            inventore repellendus rerum placeat ipsum! Nam doloremque optio blanditiis ad in eaque ratione. Ipsa aliquam
+            voluptas placeat suscipit incidunt tempore, assumenda aut autem voluptates explicabo excepturi deserunt nisi
+            nostrum quis laudantium nihil adipisci accusamus totam sed dolor eveniet molestias. Enim repellendus eius
+            voluptatibus quaerat autem eos molestias, eaque quos rem nobis corrupti quas porro nisi at unde sed tempora
+            ipsa dolorem labore pariatur? Quae nemo exercitationem omnis natus? Quidem debitis quibusdam eveniet
+            suscipit est fuga in provident optio explicabo libero eum harum reprehenderit natus repellat perspiciatis,
+            cupiditate ea! 2</div>
+        <div class="card">Card 3</div>
+    </div>
+
+</body>
+
+</html>
