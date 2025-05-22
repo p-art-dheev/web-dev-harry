@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Nav Bar Sol</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color1: #032f3c;
+            --color2: #217b7e;
+            --fontcolor1: white;
+            --fontcolor2: yellow;
+            --bradius: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+
+        }
+
+        .items {
+            background-color: var(--color2);
+            padding: 20px;
+            color: var(--fontcolor2);
+            border-radius: var(--bradius);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="items item-1">Home</div>
+        <div class="items item-2">Explore</div>
+        <div class="items item-3">About</div>
+        <div class="items item-4">Contact</div>
+        <div class="items item-5">Sign In</div>
+    </div>
+</body>
+
+</html>
