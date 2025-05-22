@@ -1,0 +1,33 @@
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+  padding: 0px 16px;
+  align-items: center;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  font-family: "poppins";
+  color: rgb(63, 63, 63);
+}
+
+img {
+  height: 60px;
+}
+.bar {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 60px;
+}
+
+a img {
+  height: 14px;
+  margin-left: 5px;
+}
+#english {
+  margin-right: 20px;
+  height: 24px;
+}
