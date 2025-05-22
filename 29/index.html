@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Design a Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .main-card {
+            border: 1px solid rgb(121, 121, 121);
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+            width: 20vw;
+            ;
+
+        }
+
+        #image {
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        .attributes {
+            display: inline;
+            justify-content: space-between;
+            border: 1px solid rgb(145, 145, 145);
+            border-radius: 12px;
+            padding: 6px;
+        }
+
+        .section-2 {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .content {
+            margin: 10px;
+        }
+
+        #button {
+            color: rgb(59, 134, 255);
+            background-color: rgb(153, 184, 249);
+            border: none;
+            border-radius: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
+
+<body>
+    <div class="main-card">
+        <img id="image" src="image.png">
+
+        <div class="section-2">
+            <span class="attributes">Nature</span>
+            <span class="attributes">Lake</span>
+        </div>
+
+        <div class="content">
+            <h2>Lago di Braies</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error itaque ad repellendus, laboriosam iusto
+                hic quis dignissimos dolor. Impedit quibusdam numquam id accusamus repudiandae culpa facilis nostrum
+                labore delectus perferendis!</p>
+        </div>
+
+        <div id="button">Read More</div>
+
+
+
+    </div>
+
+</body>
+
+</html>
