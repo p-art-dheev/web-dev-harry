@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            width: 20vw;
+            height: 20vh;
+            overflow: auto;
+            /*It make the scroll horizontally and text doesn't appear down (bottom lines) */
+            /*white-space: nowrap;*/
+            /*overflowing text will be appeared as ... */
+            text-overflow: ellipsis;
+
+
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            overflow: hidden auto;
+            /*hidden in x, auto in y, same as above */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">I am Pardheev Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit libero animi
+        sapiente ducimus ullam quo hic eveniet provident consequatur autem, nemo eligendi minima nesciunt qui quisquam
+        dolorem sed eum, possimus non reprehenderit fugit. Praesentium expedita incidunt ullam modi optio? Porro
+        consequatur esse repellat cum, illum nulla optio adipisci officiis voluptates qui sint. Dolorem, eius molestiae
+        fuga perspiciatis explicabo, adipisci veritatis dolorum nesciunt provident est in totam?</div>
+
+</body>
+
+</html>
