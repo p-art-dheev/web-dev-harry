@@ -161,9 +161,12 @@ nav {
   flex-direction: row;
   gap: 1em;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
 }
 .reasoncard-1 {
   background-color: rgb(27, 33, 69);
+  background-image: linear-gradient(to bottom right, rgb(27, 33, 69), #210e17);
   height: 16vw;
   width: 16vw;
   border-radius: 1em;
@@ -207,6 +210,14 @@ nav {
   padding-top: 1.2em;
   padding-bottom: 1.2em;
   padding-left: 1em;
+}
+.faq-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-final img {
+  padding-right: 1em;
 }
 .faq:hover {
   background-color: #414040;
@@ -272,19 +283,24 @@ nav {
   padding-top: 4em;
 }
 /* FOOTER */
+.call {
+  padding-bottom: 2em;
+}
 .ph-number {
   text-decoration: underline;
 }
 .quick-links ul {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .quick-links ul li {
   text-decoration: underline;
   list-style-type: none;
+  padding-top: 1em;
 }
 .Netflix-India {
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 .page-protection {
   padding-top: 2em;
@@ -293,4 +309,24 @@ nav {
 .learn-more {
   text-decoration: underline;
   color: rgb(0, 149, 255);
+}
+
+/* TRENDING Now MOVIE CARDS */
+.trendingnow-container {
+  display: flex;
+  gap: 3em;
+  flex-direction: row;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 1em;
+}
+.trendingnow-container img {
+  border-radius: 0.5em;
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.trendingnow-container img:hover {
+  transform: scale(1.05);
+  border-radius: 0.5em;
+  cursor: pointer;
 }
