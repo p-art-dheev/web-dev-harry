@@ -149,12 +149,13 @@ nav {
 }
 
 /* Reasons to Join Section */
+
 .h2 {
   font-size: 1.4em;
   font-weight: 900;
   font-family: "Netflix Sans", sans-serif;
   padding-bottom: 0.5em;
-  padding-top: 0.5em;
+  padding-top: 2em;
 }
 .reasons-container {
   display: flex;
@@ -197,6 +198,9 @@ nav {
 
 /* FAQ Heading*/
 /* FAQs Container */
+.FAQ-title {
+  padding-top: 3em;
+}
 .faq-container {
   display: flex;
   flex-direction: column;
