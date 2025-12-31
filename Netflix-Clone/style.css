@@ -334,3 +334,22 @@ nav {
   border-radius: 0.5em;
   cursor: pointer;
 }
+
+@media only screen and (orientation: portrait) {
+  .reasoncard-1 {
+    background-color: rgb(27, 33, 69);
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(27, 33, 69),
+      #210e17
+    );
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    padding: 1em;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
